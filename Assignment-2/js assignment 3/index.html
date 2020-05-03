@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment 3</title>
+    <script>
+        function myFunction() {
+            var x =document.getElementById('myImage').alt;
+            console.log(x);
+            if(x == 'River'){
+                document.getElementById('myImage').src='images/mountain.jpg';
+                document.getElementById('myImage').alt="Mountain";
+            }
+            else if(x == 'Mountain'){
+                document.getElementById('myImage').src='images/clouds.jpg';
+                document.getElementById('myImage').alt="Clouds";
+            }
+            else{
+                document.getElementById('myImage').src='images/river.jpg';
+                document.getElementById('myImage').alt="River";
+            }
+        }
+        </script>
+</head>
+<body>
+    <img src="images/river.jpg" id="myImage" alt="River" onclick="myFunction()">
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Assignment 2</title>
+    <script type="text/JavaScript">
+        function showMessage(){
+            var message="Hello ";
+            message += document.getElementById("message").value + "!";
+            console.log(message);
+            display_message.innerHTML= message;
+        }
+    </script>
+</head>
+<body>
+Enter your name: <input type="text" id = "message">
+<input type="submit" onclick="showMessage()" value="submit" />
+<h1> <span id = "display_message"></span> </h1>
+</body>
+</html>

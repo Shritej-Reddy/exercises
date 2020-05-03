@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment 4</title>
+    <script>
+        function mountain(){
+            document.getElementById('myImage').src='images/mountain.jpg';
+        }
+        function cloud(){
+            document.getElementById('myImage').src='images/clouds.jpg';
+        }
+    </script>
+</head>
+<body>
+    <img src="images/river.jpg" id="myImage" onmouseover="mountain(this)" onmouseout="cloud(this)" alt="River">
+</body>
+</html>

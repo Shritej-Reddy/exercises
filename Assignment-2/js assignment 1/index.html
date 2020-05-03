@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment 1</title>
+    <script>
+        //function to display Hello World on console and on the HTML tag with id="h2"
+        function helloworld(){
+            console.log("Hello World");
+            document.getElementById("h2").innerHTML = "Hello World";
+        }
+    </script>
+</head>
+<body onload="helloworld()">
+    <!-- DUMMY H2 TAG-->
+    <h2 id="h2">This is dummy text. It will be changed using function helloworld()</h2>
+</body>
+</html>
